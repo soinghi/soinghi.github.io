@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab4</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#"> <i class="fas fa-cloud-moon fa-2x"></i></i></a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <!-- menu trái -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="bi bi-envelope-open"></i> Giới thiệu</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="bi bi-folder2"></i> Liên hệ</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="bi bi-headset"></i> Góp ý</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"> <i class="bi bi-file-person"></i>Dịch vụ</a>
+          </li>
+
+          <li class="nav-item">
+            <form action="" class="form-inline">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button class="btn btn-info">Search</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+    <!--end thanh navbar-->
+
+    <div id="demo" class="carousel slide" data-ride="carousel" style="height: 500px;">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="HINHANH/imagetour/c1.jpg" height="500px" width="100%" alt="Los Angeles">
+          <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p>We had such a great time!</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="HINHANH/imagetour/c2.jpg" height="500px" width="100%" alt="Chicago">
+
+        </div>
+
+        <div class="carousel-item">
+          <img src="HINHANH/imagetour/c3.jpg" height="500px" width="100%" alt="New York">
+        </div>
+
+        <div class="carousel-item">
+          <img src="HINHANH/imagetour/c4.jpg" height="500px" width="100%" alt="New York">
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+
+    <!-- body tour -->
+    <div class="bg-dark text-white text-center p-4">
+      <h2>LỊCH DIỄN</h2>
+
+      <div id="accordion">
+
+        <!--September-->
+        <div class="card text-info text-left">
+          <div class="card-header">
+            <a href="#sep" data-toggle="collapse">September</a>
+            <span class="badge badge-pill badge-danger float-right">2</span>
+          </div>
+
+          <div class="card-body collapse" id="sep" data-parent="#accordion">
+            <div class="card-columns">
+
+              <!--card con-->
+              <div class="card text-center">
+                <img src="HINHANH/imagetour/thailan.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Thái Lan</h5>
+                  <p>Friday, 27 September 2021</p>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Mua
+                    vé</button>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img src="HINHANH/imagetour/hanquoc.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Hàn Quốc</h5>
+                  <p>Friday, 27 September 2021</p>
+                  <button type="button" class="btn btn-primary">Mua vé</button>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img src="HINHANH/imagetour/nhatban.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Nhật Bản</h5>
+                  <p>Friday, 27 September 2021</p>
+                  <button type="button" class="btn btn-primary">Mua vé</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--End September-->
+
+        <!--OCTOBER-->
+        <div class="card text-info text-left">
+          <div class="card-header">
+            <a href="#sep" data-toggle="collapse">October</a>
+            <span class="badge badge-pill badge-danger float-right">3</span>
+          </div>
+
+          <div class="card-body collapse" id="sep" data-parent="#accordion">
+            <div class="card-columns">
+
+              <!--card con-->
+              <div class="card text-center">
+                <img src="HINHANH/imagetour/thailan.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Thái Lan</h5>
+                  <p>Friday, 27 September 2021</p>
+                  <button type="button" class="btn btn-primary">Mua vé</button>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img src="HINHANH/imagetour/hanquoc.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Hàn Quốc</h5>
+                  <p>Friday, 27 September 2021</p>
+                  <button type="button" class="btn btn-primary">Mua vé</button>
+                </div>
+              </div>
+
+              <div class="card text-center">
+                <img src="HINHANH/imagetour/nhatban.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5>Nhật Bản</h5>
+                  <p>Friday, 27 September 2021</p>
+                  <button type="button" class="btn btn-primary">Mua vé</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end body tour-->
+
+    <!--Vùng Modal-->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Ticket</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <label for="">Giá là...</label>
+            <input type="text" class="form-control">
+            <label for="">Email của bạn là...</label>
+            <input type="text" class="form-control">
+            <a href="" class="card-link">PAY</a>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--end Modal-->
+
+    <!--Liên hệ-->
+    <div class="row p-4">
+      <div class="col-lg-4">
+        <p>Fan??</p>
+        <p><i class="far fa-arrow-alt-circle-down">Tokyo</i></i></p>
+        <p><i class="far fa-arrow-alt-circle-down">Tokyo</i></i></p>
+        <p><i class="far fa-arrow-alt-circle-down">Tokyo</i></i></p>
+      </div>
+
+      <div class="col-lg-8">
+        <h5>COnTACT</h5>
+        <p>We love our fans!</p>
+        <input type="text" class="form-control" placeholder="Name">
+        <input type="text" class="form-control my-3" placeholder="Email">
+        <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Comment"></textarea>
+        <button type="button" class="btn btn-danger">SEND</button>
+      </div>
+    </div>
+    <!--end liên hệ-->
+
+    <hr>
+    <!--Tabs-->
+    <div>
+      <h5 class="text-center">FROM THE BLOG</h5>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#home">Mikey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu1">Haha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">Hihi</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container active" id="home">So good!</div>
+        <div class="tab-pane container fade" id="menu1">Heluuu</div>
+        <div class="tab-pane container fade" id="menu2">Chào!</div>
+      </div>
+    </div>
+    <!--end tabs-->
+
+    <!--dịch vụ-->
+    <div class="container text-center">
+      <h5>DỊCH VỤ</h5>
+      What we offer
+      <div class="card-columns">
+        <div class="card shadow">
+          <div class="card-body">
+            <i class="fas fa-power-off fa-3x" style="color:green"></i>
+            <h5>POWER</h5>
+            some example text
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <div class="card-body">
+            <i class="fas fa-cannabis fa-3x" style="color:blue"></i>
+            <h5>GREEN</h5>
+            some example text
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <div class="card-body">
+            <i class="fas fa-heart fa-3x" style="color:red"></i>
+            <h5>LOVE</h5>
+            some example text
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <div class="card-body">
+            <i class="fas fa-sun fa-3x" style="color:yellow"></i>
+            <h5>CERTIFIED</h5>
+            some example text
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <div class="card-body">
+            <i class="fas fa-briefcase fa-3x" style="color:silver"></i>
+            <h5>JOB DONE</h5>
+            some example text
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <div class="card-body">
+            <i class="fas fa-laptop fa-3x" style="color:teal"></i>
+            <h5>HARD WORD=K</h5>
+            some example text
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--end dịch vụ-->
+
+  </div>
+
+</body>
+
+</html>
